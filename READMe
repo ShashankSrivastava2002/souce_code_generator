@@ -1,0 +1,28 @@
+PROCEDURE::::
+
+1. User Interface Development:
+
+The initial step involved designing a user interface using Streamlit.
+Various methods were prepared to facilitate user interaction, allowing input for the 'target language' and the 'function name' to be changed.
+
+2. Language Detection Function:
+To ensure accurate language detection, a custom function was developed due to limitations encountered with pre-built libraries. The function is designed to identify the language of the uploaded file based on its extension. This approach proved essential, particularly for handling "RAW" files effectively, which were erroneously categorized as "plain" files by existing libraries.
+
+3. File Handling and Text Extraction:
+Subsequently, a file handling function was created to save the uploaded file securely and extract text for further processing.
+
+
+4. Code Conversion Function:
+A pivotal function was developed to handle the conversion process. This function accepts parameters such as the detected language, extracted text, target language, and function name to be converted. It employs Google GEMINI to generate a new code snippet in the desired language.
+
+
+
+5.  Accuracy Calculation:
+An accuracy calculator was devised, utilizing Google GEMINI once more. This feature enables the assessment of the accuracy of the code conversion process. Its returns the conversion rate on a scale of 1 to 5.
+
+
+
+
+HOW TO USE::
+
+1. create a virtual environment and install requirements.txt and then run file.
